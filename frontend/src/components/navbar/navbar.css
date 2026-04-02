@@ -1,0 +1,73 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid var(--border-color);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar .left .logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.navbar .left a {
+  font-weight: 500;
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+
+.navbar .left a:hover {
+  color: var(--primary-color);
+}
+
+.navbar .right .user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar .right .user img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar .right .user .profileBtn {
+  padding: 8px 18px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.navbar .right .auth {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar .right .auth a {
+  font-weight: 500;
+}
+
+.navbar .right .auth .registerBtn {
+  padding: 8px 18px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+}

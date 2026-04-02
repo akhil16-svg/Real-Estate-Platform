@@ -1,0 +1,40 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.filter h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.filter .top .item,
+.filter .bottom .item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter .bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.filter .item label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--light-text);
+}
+
+.filter .item input,
+.filter .item select {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 130px;
+}

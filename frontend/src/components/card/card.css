@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  gap: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card .imageContainer {
+  flex: 1;
+  max-width: 200px;
+  min-height: 160px;
+}
+
+.card .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .textContainer {
+  flex: 3;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card .textContainer .title a {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.card .textContainer .title a:hover {
+  color: var(--primary-color);
+}
+
+.card .textContainer .address {
+  display: flex;
+  gap: 6px;
+  color: var(--light-text);
+  font-size: 14px;
+}
+
+.card .textContainer .price {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.card .textContainer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.card .textContainer .bottom .features {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--light-text);
+}

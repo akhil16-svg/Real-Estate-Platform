@@ -1,0 +1,65 @@
+.profilePage {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.profilePage .details {
+  flex: 3;
+  overflow-y: scroll;
+}
+
+.profilePage .details .wrapper {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profilePage .details .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profilePage .details .title h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.profilePage .details .title button,
+.profilePage .details .info button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.profilePage .details .info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profilePage .details .info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profilePage .chatContainer {
+  flex: 2;
+  background-color: #f9f9f9;
+  overflow-y: scroll;
+}
+
+.profilePage .chatContainer .wrapper {
+  padding: 30px;
+}
+
+.profilePage .error {
+  color: red;
+}

@@ -1,0 +1,51 @@
+.updatePostPage {
+  padding: 30px;
+}
+
+.updatePostPage h1 {
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.updatePostPage form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 760px;
+}
+
+.updatePostPage .item {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.updatePostPage .item.description {
+  flex: 1 1 100%;
+}
+
+.updatePostPage .item label {
+  font-weight: 600;
+}
+
+.updatePostPage .item input {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.updatePostPage button {
+  padding: 12px 28px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.updatePostPage .error {
+  color: red;
+  flex: 1 1 100%;
+}
