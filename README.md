@@ -293,7 +293,23 @@ All routes are prefixed with `/api`.
 
 ## 📸 Screenshots
 
-> _Screenshots will be added after the first deployment._
+### 🏠 Home Page
+![Home Page](https://github.com/user-attachments/assets/69942ba7-cdb1-49fb-ad53-a9ece375a438)
+
+### 📋 Property List + Map
+![Property List](https://github.com/user-attachments/assets/5102774a-bdf9-402d-b3a9-b7c6a6eba8ac)
+
+### 🏢 Property Detail
+![Property Detail](https://github.com/user-attachments/assets/065b6b1c-4bef-4f6f-b948-8e4722f3ce8f)
+
+### 👤 User Profile + Real-time Chat
+![User Profile](https://github.com/user-attachments/assets/8491cea9-72b3-4dbe-ba15-c9654c2e0cf0)
+
+### 🔐 Login & Register
+![Login and Register](https://github.com/user-attachments/assets/505bdc81-f98b-4c07-9b59-88e49805c0c4)
+
+### ➕ Add New Property
+![Add New Property](https://github.com/user-attachments/assets/2f913a24-5376-4938-a1f0-cc431376ce5c)
 
 | Page | Preview |
 |---|---|
