@@ -1,3 +1,4 @@
+import http from "http";
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
@@ -9,6 +10,7 @@ import postRoute from "./routes/post.route.js";
 import userRoute from "./routes/user.route.js";
 import chatRoute from "./routes/chat.route.js";
 import messageRoute from "./routes/message.route.js";
+import { initSocket } from "./socket/index.js";
 
 dotenv.config();
 
@@ -60,6 +62,11 @@ app.use("/api/chats", chatRoute);
 app.use("/api/messages", messageRoute);
 
 const PORT = process.env.PORT || 8800;
-app.listen(PORT, () => {
+
+// Attach Socket.io to the same HTTP server so real-time chat shares the port
+const server = http.createServer(app);
+initSocket(server);
+
+server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

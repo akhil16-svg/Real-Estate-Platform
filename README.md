@@ -171,9 +171,13 @@ Real-Estate-Platform/
 ## 🚀 Setup Instructions
 
 ### Prerequisites
-- Node.js v18+
+- **Node.js v22 LTS** (use [nvm](https://github.com/nvm-sh/nvm): `nvm install && nvm use` — the `.nvmrc` pins v22)
 - A MongoDB Atlas cluster (free tier works)
 - A Cloudinary account (free tier works)
+
+> **Note on Node version:** This project targets Node.js v22 LTS. The backend uses
+> `bcryptjs` (pure-JS) instead of `bcrypt` so there are no native binary dependencies
+> and no `url.parse()` deprecation warnings on Node 24+.
 
 ### 1. Clone the repository
 ```bash
@@ -199,8 +203,11 @@ npx prisma generate
 
 Start the backend server:
 ```bash
-npm run dev
-# Server runs on http://localhost:8800
+npm run dev      # development (nodemon, auto-restart)
+# -- or --
+npm start        # production
+
+# Server + Socket.io both run on http://localhost:8800
 ```
 
 ### 3. Set up the Frontend
