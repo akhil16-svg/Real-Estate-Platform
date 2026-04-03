@@ -1,0 +1,69 @@
+.singlePage {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.singlePage .details {
+  flex: 3;
+  overflow-y: scroll;
+}
+
+.singlePage .details .wrapper {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.singlePage .details .info h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.singlePage .details .info .price {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 8px;
+}
+
+.singlePage .details .info .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.singlePage .details .info .user img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.singlePage .features {
+  flex: 2;
+  overflow-y: scroll;
+  background-color: #fcfcfc;
+}
+
+.singlePage .features .wrapper {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.singlePage .features .title {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--light-text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.singlePage .features .mapContainer {
+  width: 100%;
+  height: 250px;
+}

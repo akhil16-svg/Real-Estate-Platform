@@ -1,0 +1,49 @@
+.profileUpdatePage {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileUpdatePage .formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 360px;
+}
+
+.profileUpdatePage .formContainer form h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.profileUpdatePage .formContainer form .item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profileUpdatePage .formContainer form .item label {
+  font-weight: 600;
+}
+
+.profileUpdatePage .formContainer form .item input {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.profileUpdatePage .formContainer form button {
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profileUpdatePage .error {
+  color: red;
+}

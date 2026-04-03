@@ -1,0 +1,22 @@
+.listPage {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.listPage .listContainer {
+  flex: 3;
+  overflow-y: scroll;
+}
+
+.listPage .listContainer .wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.listPage .mapContainer {
+  flex: 2;
+  position: sticky;
+  top: 80px;
+}
