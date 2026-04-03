@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    env:
+      DATABASE_URL: "mongodb://dummy"  
     defaults:
       run:
         working-directory: backend
